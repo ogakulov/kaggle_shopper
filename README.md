@@ -1,4 +1,4 @@
-**bold** Kaggle Acquired Valued Shoppers Challeng **bold**
+**Kaggle Acquired Valued Shoppers Challenge**
 Here are my scripts so far.
 
-Thanks Triskelion for the python script to subset the transcations data.
+Thanks Triskelion for the python script to subset the transcations data!
