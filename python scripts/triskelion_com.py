@@ -10,7 +10,7 @@ def reduce_data(loc_offers, loc_transactions, loc_reduced):
   #get all categories on offer in a dict
   offers = {}
   for e, line in enumerate( open(loc_offers, "U") ):
-     offers[ line.split(",")[1] ] = 1
+     offers[ line.split(",")[3] ] = 1
 
   #open output file
   with open(loc_reduced, "wb") as outfile:
@@ -21,7 +21,7 @@ def reduce_data(loc_offers, loc_transactions, loc_reduced):
         outfile.write( line ) #print header
       else:
         #only write when category in offers dict
-          if line.split(",")[3] in offers:
+          if line.split(",")[4] in offers:
             outfile.write( line )
             reduced += 1
       #progress
